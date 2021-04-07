@@ -1,0 +1,14 @@
+.ui.one.grid > .column:not(.row) {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.navLink {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.iconLink {
+  margin-right: 1rem !important;
+}

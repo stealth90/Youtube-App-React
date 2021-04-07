@@ -1,0 +1,31 @@
+.header-container {
+  display: grid;
+  grid-template-columns: 60px 130px auto 50px 50px 50px 50px;
+  grid-template-rows: 50px;
+  padding-top: 1rem;
+}
+
+.search-container {
+  margin: 1rem;
+  display: flex;
+  max-width: 700px;
+  margin-left: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.youtubeIcon {
+  pointer-events: none;
+  display: flex;
+  margin: auto 1.5rem;
+}
+
+.hamburgerIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconSidebar {
+  align-self: center;
+}

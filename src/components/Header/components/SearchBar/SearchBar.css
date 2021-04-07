@@ -1,0 +1,17 @@
+.search-button {
+  width: 80px;
+  border-radius: 0;
+  border: 0 solid;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  transition: border-color 300ms;
+  cursor: pointer;
+  align-self: stretch;
+}
+.search-button:hover {
+  border-color: black;
+}
+.customForm {
+  width: 100%;
+}
