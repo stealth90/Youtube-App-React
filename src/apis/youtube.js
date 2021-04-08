@@ -9,7 +9,7 @@ export const baseParams = {
 };
 
 export const videoParams = {
-  part: encodeURI("snippet,statistics,id,contentDetails"),
+  part: encodeURI("snippet,statistics,contentDetails"),
   key: KEY,
 };
 

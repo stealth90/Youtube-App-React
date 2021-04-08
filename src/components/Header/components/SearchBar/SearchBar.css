@@ -15,3 +15,8 @@
 .customForm {
   width: 100%;
 }
+
+.search-container input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import youtube, { videoParams } from "../apis/youtube";
+import youtube, { videoParams } from "../../apis/youtube";
 
 const VideoDetail = ({ video }) => {
   const [videoDetail, setVideoDetail] = useState();
@@ -20,7 +20,7 @@ const VideoDetail = ({ video }) => {
     console.log("ressponse", response);
   };
 
-  if (!videoDetail && !video) {
+  if (!videoDetail || !video) {
     return <div></div>;
   }
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;

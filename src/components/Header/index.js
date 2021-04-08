@@ -1,9 +1,9 @@
 import React from "react";
-import { Icon, Image } from "semantic-ui-react";
+import { Icon } from "semantic-ui-react";
 import "./styles.css";
 import SearchBar from "./components/SearchBar/SearchBar";
 import YoutubeIcon from "./components/YoutubeIcon";
-import logo from "../../images/elliot.jpeg";
+import ProfilePage from "./components/ProfilePage/ProfilePage";
 
 const Header = ({ onFormSubmit, onOpenSidebar }) => {
   return (
@@ -25,7 +25,7 @@ const Header = ({ onFormSubmit, onOpenSidebar }) => {
       />
       <Icon className="iconSidebar" size="large" link name="th" />
       <Icon className="iconSidebar" size="large" link name="bell" />
-      <Image className="iconSidebar" avatar alt="profile imag" src={logo} />
+      <ProfilePage />
     </div>
   );
 };

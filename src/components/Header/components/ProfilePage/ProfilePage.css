@@ -1,0 +1,21 @@
+.header-container .ui.dropdown .menu > .header {
+  text-transform: none;
+}
+.header-container .ui.dropdown .menu > .header h3 {
+  margin: 0;
+}
+
+.header-container .ui.dropdown {
+  display: flex;
+}
+.dropdown-header {
+  display: flex;
+}
+.dropdown-header .details {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-center {
+  align-self: center;
+}
