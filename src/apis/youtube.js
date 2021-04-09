@@ -16,3 +16,11 @@ export const videoParams = {
 export default axios.create({
   baseURL: "https://www.googleapis.com/youtube/v3",
 });
+
+export const channelParams = {
+  part: encodeURI(
+    "snippet,statistics,contentDetails,contentOwnerDetails,brandingSettings"
+  ),
+  id: "UC5rNuC4voh9OB5DeNlcjZRg",
+  key: KEY,
+};
