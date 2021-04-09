@@ -18,7 +18,7 @@ const App = (props) => {
   };
 
   useEffect(() => {
-    /* onTermSubmit("buildings"); */
+    onTermSubmit("buildings");
   }, []);
 
   const onTermSubmit = async (term) => {
@@ -65,19 +65,19 @@ const App = (props) => {
               visible={openSidebar}
               width="thin"
             >
-              <Menu.Item as="a">
+              <Menu.Item key="home" as="a">
                 <div className="navLink">
                   <Icon className="iconLink" size="large" name="home" />
                   <label className="">Home</label>
                 </div>
               </Menu.Item>
-              <Menu.Item as="a">
+              <Menu.Item key="games" as="a">
                 <div className="navLink">
                   <Icon className="iconLink" size="large" name="gamepad" />
                   <label className="">Games</label>
                 </div>
               </Menu.Item>
-              <Menu.Item as="a">
+              <Menu.Item key="channels" as="a">
                 <div className="navLink">
                   <Icon className="iconLink" size="large" name="camera" />
                   <label className="">Channels</label>
@@ -91,11 +91,13 @@ const App = (props) => {
                   <ChannelComponent />
                 </Route>
                 <Route path="/">
-                  <HomeComponent
-                    videos={videos}
-                    selectedVideo={selectedVideo}
-                    onVideoSelect={onVideoSelect}
-                  />
+                  {videos && (
+                    <HomeComponent
+                      videos={videos}
+                      selectedVideo={selectedVideo}
+                      onVideoSelect={onVideoSelect}
+                    />
+                  )}
                 </Route>
               </Switch>
             </Sidebar.Pusher>

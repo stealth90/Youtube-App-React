@@ -3,6 +3,7 @@ import { Image, Dropdown } from "semantic-ui-react";
 import logo from "../../../../images/elliot.jpeg";
 import "./ProfilePage.css";
 import { gapi, loadAuth2 } from "gapi-script";
+import { Link } from "react-router-dom";
 
 const ProfilePage = ({ onFormSubmit }) => {
   const [user, setUser] = useState(null);
@@ -85,18 +86,16 @@ const ProfilePage = ({ onFormSubmit }) => {
         </Dropdown.Header>
         <Dropdown.Divider />
         {user ? (
-          <Dropdown.Item
-            onClick={signOut}
-            icon="share square outline"
-            text="Esci"
-          />
+          <Dropdown.Item onClick={signOut} icon="sign-out" text="Esci" />
         ) : (
-          <Dropdown.Item
-            onClick={login}
-            icon="share square outline"
-            text="Accedi"
-          />
+          <Dropdown.Item onClick={login} icon="sign-in" text="Accedi" />
         )}
+        <Dropdown.Item
+          as={Link}
+          to="/channel"
+          icon="id badge"
+          text="Il tuo canale"
+        ></Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );

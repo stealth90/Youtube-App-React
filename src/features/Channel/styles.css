@@ -1,0 +1,44 @@
+.banner-channel {
+  height: 20vw;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+.banner-social-link {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+}
+
+.head-info,
+.profile-info,
+.profile-name,
+.action-info {
+  display: flex;
+}
+
+.head-info {
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+
+.profile-name {
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
+.action-info {
+  margin: auto 0;
+}
+
+.profile-info {
+  max-width: 30%;
+}
+
+.nav-info .ui.secondary.pointing.menu {
+  display: flex;
+  justify-content: center;
+}
